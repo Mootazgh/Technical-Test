@@ -1,38 +1,214 @@
+#root {
+    background-color: rgb(210, 207, 207);
+    width: 100%;
+    height: 100%;
+    
+}
+/*              Home                */
+.Home .Title {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+.Home .Title h1  {
+    margin-left: 40px;
+    font-size: 42px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+.Home .Title h2 {
+    font-size: 34px; /* Adjust the font size as needed */
+    font-weight: normal; /* or use 'bold' if you prefer */
+    color: #555; /* Set the color to your preference */
+}
+.Home .Buttons {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+.Home .Buttons button{
+    background-color: green;
+    margin-left: 30px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px; /* Updated border-radius for a cleaner look */
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+.Home .Buttons button:hover {
+    background-color: #4CAF50; /* Change the color on hover */
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow on hover */
+}
+
+.Home .Buttons button:active {
+    transform: scale(0.9); /* Add a slight scale effect when the button is clicked */
+}
+.Home img {
+    border: 3px solid #4CAF50 ;
+    border-radius: 20%;
+    transform: rotate(-30deg);
+}
+.Home .img1 {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    
+}
+.Home .img2 {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+
+/*          Create Form                                   */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   
+}
+
 .App {
-  text-align: center;
+     display: flex;
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.FormElements {
+    margin-left: 2%;
+    margin-top: 10%;
+    width: 33%;
+    height: 80%;
+    border: 5px solid  green ;
+    border-radius: 20px;
+    background-color: rgb(206, 199, 199);
+}
+.FormElements .bloc {
+    margin-top: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 2px dashed green;
+    margin-bottom: 5px;
+   
+}
+.FormElements div label {
+    font-weight: bold;
+
+    color: red;
+}
+.Forms {
+    background-color: white;
+    margin-top: 10%;
+    height: 80%;
+    width: 45%;
+    border: 5px solid green  ;
+    position: relative; 
+    border-radius: 20px;
+
+}
+.Forms div {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding : 5px;
+}
+.Forms .check {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.Forms .check .click {
+    position: absolute;
+    left: -150px;
+}
+.Forms .check .checkbox {
+   background-color: white;
+   border-color: white;
+   margin-top: 20px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Forms div label input {
+    background-color: rgb(203, 200, 200);
+    width: 100%;
+    border: 2px solid green;
+}
+.Forms .Title input  {
+   background-color: white;
+   color: red;
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+}
+.Forms .textarea {
+    background-color: rgb(203, 200, 200);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Forms .CreateButton {
+    background-color: rgb(28, 238, 28);
+    border-radius: 40px;
+    font-weight: bold;
+    padding: 15px;
+    position:   absolute;
+    bottom: 20px;
+    right: 20px;
+    
 }
 
-.App-link {
-  color: #61dafb;
+/*           FormsICreated      */ 
+
+.FormsIcreated {
+    background-color:  rgb(210, 207, 207 );
+    width: 100%;
+    margin-left: 25%;
+    height: 100%;
+    
+   
+}
+.FormsIcreated h1 {
+    margin-left: 11%;
+    font-size: 42px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+.FormsIcreated .deleteForm {
+    background-color: green;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px; /* Updated border-radius for a cleaner look */
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reglage {
+    height: fit-content;
+    width: 20%;
+    background-color: rgb(154, 162, 154);
+    display: flex;
+    flex-direction: column;
+    border: 5px solid green  ;
+    
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.reglage h1 {
+    font-size: 20px;
+    color: red;
+    font-family: bold;
 }
